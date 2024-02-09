@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>ekommart</title>
+  <style>
+    header > div {
+            animation: title-translation linear;
+            animation-timeline: scroll(block root);
+        }
+
+        @keyframes line-progress {
+            0% {
+                transform: scaleX(0);
+                transform-origin: 0;
+            }
+            100% {
+                transform: scaleX(100%);
+                transform-origin: 0;
+            }
+        }
+
+        #linea {
+            animation: line-progress linear;
+            animation-timeline: scroll(block root);
+            background-color: rgb( 255,205,0);
+            height: 3px;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+  </style>
+</head>
+
+<body>
+  
+  <header>
+    <div id="inicio">
+      <div id="welcome">Welcome to our online store! Join Free or  <span id="signin"> Sign in</span></div>
+
+      <div id="idioma">
+
+        <div id="idiomaactual">English</div>
+
+        <select name="" id="">
+          <option value="">UK</option>
+          <option value="">ES</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div id="header">
+
+      <div id="contenedorheader">
+        <h1>
+          ekommart
+        </h1>
+        <picture id="img-logo">
+          <source srcset="imagenes/logo.png">
+          <img src="imagenes/logo.png" alt="logo de ekommart" id="logo-principal">
+        </picture>
+
+        <form id="search" action="#" method="post">
+          <input type="search" name="search" id="buscador" placeholder="Search among 100,000 products...">
+          <input type="submit" value="Search" id="boton">
+        </form>
+
+        <div id='usuario'>
+          <img src="imagenes/usuario.png" alt="usuario, me gusta y carrito" id="imagenusuario">
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="linea"></div>
+
+  </header>
+
+  <nav>
+
+    <ul id="nav1">
+
+      <li class="departaments">
+        <a href="#" class="all" >All Departaments</a>
+
+        <ul class="listadepartamentos">
+          <li class="tv"><a href="">Electronics</a></li>
+          <li class="casa"><a href="">Home</a></li>
+          <li class="anillos"><a href="">Beauty</a></li>
+          <li class="animales"><a href="">Pets</a></li>
+        </ul>
+
+      </li>
+
+      <li class="home lista-desplegable">
+
+        <a href="#" class="desplegable">Home</a>
+
+        <ul class="listadepartamentos">
+          <li class="tv"><a href="">Electronics</a></li>
+          <li class="casa"><a href="">Home</a></li>
+          <li class="anillos"><a href="">Beauty</a></li>
+          <li class="animales"><a href="">Pets</a></li>
+        </ul>
+
+      </li>
+
+      <li class="shop lista-desplegable">
+
+        <a href="#" class="desplegable">Shop</a>
+
+        <ul class="listadepartamentos">
+          <li class="tv"><a href="">Electronics</a></li>
+          <li class="casa"><a href="">Home</a></li>
+          <li class="anillos"><a href="">Beauty</a></li>
+          <li class="animales"><a href="">Pets</a></li>
+        </ul>
+
+      </li>
+
+      <li class="page lista-desplegable">
+
+        <a href="#" class="desplegable">Page</a>
+
+        <ul class="listadepartamentos">
+          <li class="tv"><a href="">Electronics</a></li>
+          <li class="casa"><a href="">Home</a></li>
+          <li class="anillos"><a href="">Beauty</a></li>
+          <li class="animales"><a href="">Pets</a></li>
+        </ul>
+
+      </li>
+
+      <li class="blogenlace">
+        <a href="#">Blog</a>
+      </li>
+
+      <li class="shotcode">
+        <a href="#">Shotcode</a>
+      </li>
+
+      <li class="onsale">
+        <a href="#">On Sale</a>
+      </li>
+
+      <li class="contact">
+        <a href="#">Contact</a>
+      </li>
+
+    </ul>
+
+    <ul id="nav2">
+
+      <li class="departaments" id="departamentsall">
+        
+        <a href="#" class="all" >All Departaments</a>
+
+        <ul class="listadepartamentos">
+          <li class="tv"><a href="">Electronics</a></li>
+          <li class="casa"><a href="">Home</a></li>
+          <li class="anillos"><a href="">Beauty</a></li>
+          <li class="animales"><a href="">Pets</a></li>
+        </ul>
+
+      </li>
+
+      <li class="departaments" id="listnav">
+        <img src="imagenes/navegacion.jpg" alt="" id="imagen-navegacion">
+
+        <ul class="listadeparta">
+          <li class="home">
+            <a href="#" class="desplegable">Home</a>
+
+            <ul class="listadepartamentos2">
+              <li class="tv"><a href="">Electronics</a></li>
+              <li class="casa"><a href="">Home</a></li>
+              <li class="anillos"><a href="">Beauty</a></li>
+              <li class="animales"><a href="">Pets</a></li>
+            </ul>
+
+          </li>
+
+          <li class="shop">
+            <a href="#" class="desplegable">Shop</a>
+
+            <ul class="listadepartamentos2">
+              <li class="tv"><a href="">Electronics</a></li>
+              <li class="casa"><a href="">Home</a></li>
+              <li class="anillos"><a href="">Beauty</a></li>
+              <li class="animales"><a href="">Pets</a></li>
+            </ul>
+
+          </li>
+
+          <li class="page">
+            <a href="#" class="desplegable">Page</a>
+
+            <ul class="listadepartamentos2">
+              <li class="tv"><a href="">Electronics</a></li>
+              <li class="casa"><a href="">Home</a></li>
+              <li class="anillos"><a href="">Beauty</a></li>
+              <li class="animales"><a href="">Pets</a></li>
+            </ul>
+
+          </li>
+
+          <li class="blogenlace">
+            <a href="#">Blog</a>
+          </li>
+
+          <li class="shotcode">
+            <a href="#">Shotcode</a>
+          </li>
+
+          <li class="onsale">
+            <a href="#">On Sale</a>
+          </li>
+
+          <li class="contact">
+            <a href="#">Contact</a>
+          </li>
+
+        </ul>
+
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <main>
+
+    <section id="principal">
+
+      <div id="texto">
+        
+        <div>
+          FISHER & PAYKEL
+        </div>
+        <h2><span id="kitchen">10% KITCHEN</span> CASH BACK</h2>
+        <p>
+          On Selected Fisher & Paykel Kitchen Packages
+        </p>
+        <a>Shop Now</a>
+
+      </div>
+
+    </section>
+    <div id="container">
+
+      <section id="speakers">
+
+        <div id="speakers-container">
+
+          <div id="arrivals">
+            NEW ARRIVALS
+          </div>
+          <h2>
+            <div class="bluetooth">Detel Posh</div> Bluetooth Speakers <div class="bluetooth">ever</div>
+          </h2>
+          <p>
+            LEARN HOW WE HELP
+          </p>
+
+        </div>
+
+      </section>
+
+      <section>
+        <h2 class="titulo">Navegation</h2>
+
+        <ul id="navegacion">
+
+          <li id="mobile">
+
+            <section class="informacion">
+              <div class="lista-container">
+
+                <h3>Mobile & Tablet</h3>
+                <ul>
+                  <li>
+                    <a href="#" class="enlaces">Iphone</a>
+                  </li>
+                  <li>
+                    <a href="#" class="enlaces">Samsung</a>
+                  </li>
+                  <li>
+                    <a href="#" class="enlaces">Nokia</a>
+                  </li>
+                  <li>
+                    <a href="#" class="enlaces">Blackberry</a>
+                  </li>
+                  <li>
+                    <a href="#" class="view">View more</a>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="navegacion-imagenes">
+                <img src="imagenes/tablet.png" alt="tablet" id="tablet">
+              </div>
+
+            </section>
+          </li>
+
+          <li id="cocina">
+
+            <section class="informacion">
+
+              <div class="lista-container">
+                <h3>Home and Kitchen</h3>
+                <ul>
+                  <li>
+                    <a href="#" class="enlaces">Kitchen & Dining</a>
+                  </li>
+                  <li>
+                    <a href="#" class="enlaces">Bedding</a>
+                  </li>
+                  <li>
+                    <a href="#" class="enlaces">Bath</a>
+                  </li>
+                  <li>
+                    <a href="#" class="enlaces">Furniture</a>
+                  </li>
+                  <li>
+                    <a href="#" class="view">View more</a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="navegacion-imagenes">
+                <img src="imagenes/batidora.png" alt="batidora" id="batidora">
+              </div>
+
+            </section>
+          </li>
+
+          <li id="beauty">
+
+            <section class="informacion">
+
+              <div class="lista-container">
+                <h3>Beauty & Cosmetic</h3>
+                <ul>
+                  <li>
+                    <a href="#" class="enlaces">Haircare</a>
+                  </li>
+                  <li>
+                    <a href="#" class="enlaces">Barber</a>
+                  </li>
+                  <li>
+                    <a href="#" class="enlaces">Lipstick</a>
+                  </li>
+                  <li>
+                    <a href="#" class="enlaces">Shampoo</a>
+                  </li>
+                  <li>
+                    <a href="#" class="view">View more</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="navegacion-imagenes">
+                <img src="imagenes/cosmeticos.png" alt="cosmeticos" id="cosmeticos">
+              </div>
+
+            </section>
+          </li>
+
+          <li id="food">
+
+            <section class="informacion">
+
+              <div class="lista-container">
+                <h3>Food & Culinary</h3>
+                <ul>
+                  <li>
+                    <a href="#" class="enlaces">Vegetable</a>
+                  </li>
+                  <li>
+                    <a href="#" class="enlaces">Meat</a>
+                  </li>
+                  <li>
+                    <a href="#" class="enlaces">Candy & Cake</a>
+                  </li>
+                  <li>
+                    <a href="#" class="enlaces">Voucher</a>
+                  </li>
+                  <li>
+                    <a href="#" class="view">View more</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="navegacion-imagenes">
+                <img src="imagenes/comida.png" alt="comida" id="comida">
+              </div>
+              
+            </section>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section id="bestsellers">
+      <div id="best" class="apartado">
+
+        <h2 id="sellers" >Best Sellers</h2>
+
+        <div id="lista">
+          <div>Footwear</div>•
+          <div>Apparel</div>•
+          <div>Outdoor</div>•
+          <div>Acessories</div>
+          <img src="imagenes/flechaIzquierda.png" alt="izquierda" class="flechas">
+          <img src="imagenes/flechaDerecha.png" alt="derecha" class="flechas">
+        </div>
+
+      </div>
+
+      <ul id="articulos">
+        <li class="listas">
+
+          <article class="article">
+            <a href="" class="new">New</a>
+            <a href="" class="sale">Sale</a>
+
+            <div class="botones">
+              <img src="imagenes/telefono.png" alt="movil" id="movil">
+
+              <div class="imagenes">           
+                <img src="imagenes/gusta.png" alt="me gusta el producto" class="gusta">
+                <img src="imagenes/cambiar.png" alt="cambiar producto" class="cambiar">
+                <img src="imagenes/ver.png" alt="ver producto" class="ver">
+              </div>
+
+            </div>
+
+            <div class="artinfo" id="infomovil">
+              
+              <img src="imagenes/estrellas.png" alt="estrellas de valoracion" class="estrellas">
+              <div class="tipo">
+                Electronics
+              </div>
+              <h3>Nixplay Smart Digital Photo Frame 10.1 Inch</h3>
+              <p style="color:rgb( 255,205,0); font-weight: 900;">$173.99</p>
+              <div class="product">View Product</div>
+
+            </div>
+          </article>
+        </li>
+
+        <li class="listas">
+          <article class="article">
+            <a href="" class="new">New</a>
+            <a href="" class="sale ocultar">Sale</a>
+
+            <div class="botones">
+              <img src="imagenes/usb.jpeg" alt="adaptador" id="adaptador">
+
+              <div class="imagenes">           
+                <img src="imagenes/gusta.png" alt="me gusta el producto" class="gusta">
+                <img src="imagenes/cambiar.png" alt="cambiar producto" class="cambiar">
+                <img src="imagenes/ver.png" alt="ver producto" class="ver">
+              </div>
+
+            </div>
+
+            <div class="artinfo" id="infoadaptador">
+              <img src="imagenes/estrellas.png" alt="estrellas de valoracion" class="estrellas">
+              <div class="tipo">Personal Computers</div>
+              <h3>Indoor Herb Garden Starter Kit - Organic</h3>
+              <p style="color:rgb( 255,205,0); font-weight: 900;">$25.99</p>
+              <div class="product">View Product</div>
+            </div>
+
+          </article>
+        </li>
+
+        <li class="listas">
+
+          <article class="article">
+            <a href="" class="new ocultar">New</a>
+            <a href="" class="sale">Sale</a>
+
+            <div class="botones">
+              <img src="imagenes/portatil.png" alt="" id="portatil">
+
+              <div class="imagenes">           
+                <img src="imagenes/gusta.png" alt="me gusta el producto" class="gusta">
+                <img src="imagenes/cambiar.png" alt="cambiar producto" class="cambiar">
+                <img src="imagenes/ver.png" alt="ver producto" class="ver">
+              </div>
+
+            </div>
+            <div id="artinfoportatil" class="artinfo">
+
+              <img src="imagenes/estrellas.png" alt="estrellas de valoracion" class="estrellas">
+              <div class="tipo">Camera</div>
+              <h3>AmazonBasics 60-Inch Lightweight Tripod</h3>
+              <p style="color:rgb( 255,205,0); font-weight: 900;">$49.99</p>
+              <div class="product">View Product</div>
+
+            </div>
+
+          </article>
+        </li>
+
+        <li class="listas">
+
+          <article class="article">
+            <a href="" class="new ocultar">New</a>
+            <a href="" class="sale ocultar">Sale</a>
+
+            <div class="botones">
+
+              <img src="imagenes/altavoz.png" alt="" id="altavoz">
+              <div class="imagenes">           
+                <img src="imagenes/gusta.png" alt="me gusta el producto" class="gusta">
+                <img src="imagenes/cambiar.png" alt="cambiar producto" class="cambiar">
+                <img src="imagenes/ver.png" alt="ver producto" class="ver">
+              </div>
+
+            </div>
+            <div id="artinfoaltavoz" class="artinfo">
+
+              <img src="imagenes/estrellas.png" alt="estrellas de valoracion" class="estrellas">
+              <div class="tipo">Electronics</div>
+              <h3>Freece Badge Of Sport Graphic Hoodie</h3>
+              <p style="color:rgb( 255,205,0); font-weight: 900;">$250.99</p>
+              <div class="product">View Product</div>
+
+            </div>
+
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <div id="container2">
+
+      <section id="movie">
+
+        <div class="info-publicidad">
+          <div id="electronics">ELECTRONICS</div>
+          <h2>Be movie night ready.</h2>
+          <a href="#" id="buynow">Buy now</a>
+        </div>
+
+      </section>
+
+      <section id="tools">
+
+        <div class="info-publicidad">
+          <div id="seller2">BEST SELLER</div>
+          <h2><div id="cookware">Cookware</div> & Kitchen Tools</h2>
+          <a href="#" id="buy">Buy now</a>
+        </div>
+
+      </section>
+
+    </div>
+    <div id="multimedia">
+      <section id="audio">
+        <audio controls autoplay muted>
+          <source src="audioProyecto.mp3" type="audio/mpeg">
+            Tu bucador no permite el tipo de audio.
+        </audio>
+      </section>
+
+      <section id="videoekommart">
+        <video width="520" height="440" controls>
+          <source src="videoProyecto.mp4" type="video/mp4">
+          Tu bucador no permite el tipo de audio.
+        </video>
+      </section>
+
+      <section id="videoYoutube">
+        <video width="520" height="440" controls>
+          <source src="videoYoutube.mp4" type="video/mp4">
+          Tu bucador no permite el tipo de audio.
+        </video>
+      </section>
+    </div>
+    <section>
+
+      <h2 id="rating" class="apartado">Top Rating</h2>
+
+      <ul id="top">
+        <li id="articulo1">
+          <article>
+
+            <img src="imagenes/agua.png" alt="dispensador de agua" id="agua">
+            <img src="imagenes/estrellas.png" alt="estrellas de valoracion" id="estrellaagua">
+            <div>Electronics</div>
+            <h3>Nixplay Smart Digital Photo Frame 10.1 Inch - Share Moments</h3>
+            <p style="color:rgb( 255,205,0); font-weight: 900;">$173.99</p>
+
+          </article>
+        </li>
+
+        <li id="articulo2">
+          <article class="text">
+
+            <div class="articulo-content">
+
+              <img src="imagenes/promic.png" alt="altavoz" id="promic">
+              <div id="articulosinfo">
+
+                <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
+                <h3>PROMIC Barbell Rubber 1lb to 20lb</h3>
+                <p style="color:rgb( 255,205,0); font-weight: 900;">$55.00</p>
+
+              </div>
+
+            </div>
+          </article>
+        </li>
+
+        <li id="articulo3">
+          <article class="text">
+
+            <div class="articulo-content">
+
+              <img src="imagenes/reloj.png" alt="reloj" id="reloj">
+              <div id="articulosinfo">
+
+                <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
+                <h3>ZIYUE Jump Rope Premium</h3>
+                <p style="color:rgb( 255,205,0); font-weight: 900;">$90.00</p>
+              </div>
+
+            </div>
+
+          </article>
+        </li>
+
+        <li id="articulo4">
+          <article class="text">
+
+            <div class="articulo-content">
+
+              <img src="imagenes/batir.png" alt="batidora" id="batir">
+              <div id="articulosinfo">
+
+                <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
+                <h3>Stronger Ankle Weights Set</h3>
+                <p style="color:rgb( 255,205,0); font-weight: 900;">$40.00</p>
+
+              </div>
+
+            </div>
+          </article>
+        </li>
+
+        <li id="articulo5">
+          <article>
+
+            <div class="articulo-content">
+
+              <img src="imagenes/estufa.png" alt="estufa" id="estufa">
+              <div id="articulosinfo">
+
+                <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
+                <h3>HemingWeight 1/2-Inch</h3>
+                <p style="color:rgb( 255,205,0); font-weight: 900;">$55.00</p>
+
+              </div>
+
+            </div>
+          </article>
+        </li>
+
+        <li id="articulo6">
+          <article class="text">
+
+            <div class="articulo-content">
+
+              <img src="imagenes/mochila.png" alt="mochila escolar" id="mochila">
+
+              <div id="articulosinfo">
+
+                <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
+                <h3>PROMIC Barbell Rubber 1lb to 20lb</h3>
+                <p style="color:rgb( 255,205,0); font-weight: 900;">$55.00</p>
+
+              </div>
+
+            </div>
+          </article>
+        </li>
+
+        <li id="articulo7">
+          <article class="text">
+
+            <div class="articulo-content">
+
+              <img src="imagenes/comba.png" alt="comba" id="comba">
+
+              <div id="articulosinfo">
+                <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
+                <h3>ZIYUE Jump Rope Premium</h3>
+                <p style="color:rgb( 255,205,0); font-weight: 900;">$90.00</p>
+
+              </div>
+              
+            </div>
+          </article>
+        </li>
+
+        <li id="articulo8">
+          <article class="text">
+
+            <div class="articulo-content">
+
+              <img src="imagenes/cuchillos.png" alt="cuchillos" id="cuchillos">
+
+              <div id="articulosinfo">
+
+                <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
+                <h3>Stronger Ankle Weights Set</h3>
+                <p style="color:rgb( 255,205,0); font-weight: 900;">$40.00</p>
+
+              </div>
+
+            </div>
+          </article>
+        </li>
+
+        <li id="articulo9">
+          <article>
+            <div class="articulo-content">
+
+              <img src="imagenes/promic.png" alt="altavoz" id="promic2">
+
+              <div id="articulosinfo">
+
+                <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
+                <h3>HemingWeight 1/2-Inch</h3>
+                <p style="color:rgb( 255,205,0); font-weight: 900;">$55.00</p>
+
+              </div>
+
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section id="headphones">
+
+      <div id="info-headphones">
+
+        <div id="audio">THE AUDIO SALE UP TO <span id="porcentaje">60%</span> OFF</div>
+        <h2>Headphones & Speakers</h2>
+        <a>Shop Now</a>
+
+      </div>
+    </section>
+
+    <div id="container3">
+        
+      <section id="featuredproducts">
+
+        <div id="featured" class="apartado">
+
+          <h2>Featured Products</h2>
+
+          <div id="flecha">
+            <img src="imagenes/flechaIzquierda.png" alt="izquierda" class="flechas">
+            <img src="imagenes/flechaDerecha.png" alt="derecha" class="flechas">
+          </div>
+
+        </div>
+
+        <ul id="productos">
+          <li id="fleece">
+            <article>
+
+              <div>
+                <img src="imagenes/dron.png" alt="dron" id="dron">
+              </div>
+
+              <div>
+                <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
+                <h3>Fleece Badge Of Sport Graphic Hoodie</h3>
+                <p style="color:rgb( 255,205,0); font-weight: 900;">$49.99</p>
+              </div>
+
+            </article>
+          </li>
+
+          <li id="nba">
+            <article>
+
+              <div>
+                <img src="imagenes/camara.png" alt="camara" id="camara">
+              </div>
+
+              <div>
+                <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
+                <h3>Spalding NBA Street Outdoor Basketball</h3>
+                <p style="color:rgb( 255,205,0); font-weight: 900;">$49.99</p>
+              </div>
+
+            </article>
+          </li>
+
+          <li id="fleece2">
+            <article>
+
+              <div>
+                <img src="imagenes/impresora.png" alt="impresora" id="impresora">
+              </div>
+
+              <div>
+                <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
+                <h3>Fleece Badge Of Sport Graphic Hoodie</h3>
+                <p style="color:rgb( 255,205,0); font-weight: 900;">$49.99</p>
+              </div>
+
+            </article>
+          </li>
+
+          <li id="nba2">
+            <article>
+
+              <div>
+                <img src="imagenes/aipad.png" alt="aipad" id="aipad">
+              </div>
+
+              <div>
+                <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
+                <h3>Spalding NBA Street Outdoor Basketball</h3>
+                <p style="color:rgb( 255,205,0); font-weight: 900;">$49.99</p>
+              </div>
+
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section id="testimonials">
+
+        <div id="testimonials-texto">
+
+          <h2>TESTIMONIALS</h2>
+          <img src="imagenes/testimonials.png" alt="imagen decorativa" id="imagen">
+          <p>
+            Create stunning images with as much or as little control as you
+            like thanks to a choice of Basic and Creative modes.
+          </P>
+          <img src="imagenes/linea.png" alt="" id="linea-testimoneals">
+          <div id="sean"><span id="morrison">SEAN MORRISON</span> Photographer</div>
+
+          <div id="puntos">
+            <img src="imagenes/punto.png" alt="primer punto">
+            <img src="imagenes/punto.png" alt="segundo punto">
+            <img src="imagenes/punto.png" alt="tercer punto">
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <section id="blog">
+      <h2 class="apartado">From Our Blog</h2>
+
+      <ul id="articulosblog">
+        <li>
+          <article>
+
+            <img src="imagenes/articulo1.png" alt="instagram">
+            <div><span class="performance">Performance</span> • 
+              <span class="espacio2">28 Jun,2019</span> • 
+              <span class="espacio">by Administrator</span>
+            </div>
+            <h3 class="colection">Introducing the Nike Victory Swim Col- lection</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adip- iscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+            <a href="#" class="view">Read More</a>
+
+          </article>
+        </li>
+
+        <li>
+          <article>
+
+            <img src="imagenes/articulo2.png" alt="movil cargando">
+            <div>
+              <span class="performance">Performance</span> • 
+              <span class="espacio2">28 Jun,2019</span> • 
+              <span class="espacio">by Administrator</span>
+            </div>
+            <h3 id="treatment">The KOBE V Gets the Protro Treatment</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adip- iscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+            <a href="#" class="view">Read More</a>
+
+          </article>
+        </li>
+
+        <li>
+          <article>
+
+            <img src="imagenes/articulo3.png" alt="comedor con escritorio">
+            <div>
+              <span class="performance">Performance</span> • 
+              <span class="espacio2">28 Jun,2019</span> • 
+              <span class="espacio">by Administrator</span>
+            </div>
+            <h3 id="russell">Speed and Style: the Double-Life of Russell</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adip- iscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+            <a href="#" class="view">Read More</a>
+
+          </article>
+        </li>
+
+        <li>
+          <article>
+
+            <img src="imagenes/articulo4.png" alt="jarrones">
+            <div>
+              <span class="performance">Performance</span> • 
+              <span class="espacio2">28 Jun,2019</span> • 
+              <span class="espacio">by Administrator</span>
+            </div>
+            <h3 id="colection">Introducing the Nike Victory Swim Col- lection</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adip- iscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+            <a href="#" class="view">Read More</a>
+
+          </article>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div id="footer">
+
+      <div id="publicidad">
+        <img src="imagenes/wireless.png" alt="wireless anuncio" id="wireless">
+        <img src="imagenes/macbook.png" alt="macbook anuncio" id="macbook">
+      </div>
+
+      <div id="ekommart">
+        <section id="info-epresa">
+
+          <h2 id="marca">ekommart</h2>
+
+          <div id="datos">
+
+            <p id="address">
+              Address: No 40 Baria Sreet 133/2 NewYork City,
+              NY, United States
+            </p>
+            <p id="call">
+              Call us:(+084)123.456.789
+            </p>
+            <p id="correo">
+              Email: contact@bicomart.com
+            </p>
+
+          </div>
+        </section>
+
+        <section id="info-menu">
+          <h2 class="apartados">QUICK MENU</h2>
+
+          <ul class="menu">
+
+            <li>
+              <a href="#">Tv & Video</a>
+            </li>
+
+            <li>
+              <a href="#">Home Audio & Theater</a>
+            </li>
+
+            <li>
+              <a href="#">Camera, Photo & Video</a>
+            </li>
+
+            <li>
+              <a href="#">Cell Phones & Accessories</a>
+            </li>
+
+            <li>
+              <a href="#">Headphones</a>
+            </li>
+
+            <li>
+              <a href="#">Video Games</a>
+            </li>
+
+          </ul>
+        </section>
+
+        <section id="info">
+          <h2 class="apartados">INFORMATION</h2>
+
+          <ul class="menu">
+
+            <li>
+              <a href="#">About Us</a>
+            </li>
+
+            <li>
+              <a href="#">Brands</a>
+            </li>
+
+            <li>
+              <a href="#">Gift Vouchers</a>
+            </li>
+
+            <li>
+              <a href="#">Site Map</a>
+            </li>
+
+            <li>
+              <a href="#">Accessories</a>
+            </li>
+
+          </ul>
+        </section>
+
+        <section id="account">
+          <h2 class="apartados">MY ACCOUNT</h2>
+
+          <ul class="menu">
+
+            <li>
+              <a href="#">My Account</a>
+            </li>
+
+            <li>
+              <a href="#">Order History</a>
+            </li>
+
+            <li>
+              <a href="#">Wish List</a>
+            </li>
+
+            <li>
+              <a href="#">Order History</a>
+            </li>
+
+            <li>
+              <a href="#">Wishlist</a>
+            </li>
+
+          </ul>
+        </section>
+
+        <section id="newsletter">
+          <h2 class="apartados">NEWSLETTER</h2>
+          <p>Register now to get updates on promotions and coupons</p>
+
+          <form action="#" method="post" id="form-suscribe">
+            <input type="email" name="email" id="email" placeholder="Your Email..." required>
+            <input type="submit" value="Subscribe" id="suscribe">
+          </form>
+
+        </section>
+      </div>
+
+      <div id="productospaguina">
+        <div>
+          <section class="secciones">
+
+            <div class="estilo">
+              <h2>Mobiles:</h2>
+            </div>
+
+            <div>
+              <ul class="marcaslista">
+
+                <li>
+                  <a href="#">Moto E</a>
+                </li>
+
+                <li>
+                  <a href="#">Samsung mobile</a>
+                </li>
+
+                <li>
+                  <a href="#">Micromax mobile</a>
+                </li>
+
+                <li>
+                  <a href="#">Nokia mobile</a>
+                </li>
+
+                <li>
+                  <a href="#">HTC mobile</a>
+                </li>
+
+                <li>
+                  <a href="#">Sony mobile</a>
+                </li>
+
+                <li>
+                  <a href="#">Apple moblie</a>
+                </li>
+
+                <li>
+                  <a href="#">LG mobile</a>
+                </li>
+
+              </ul>
+            </div>
+          </section>
+
+          <section class="secciones">
+
+            <div class="estilo">
+              <h2 class="estilo">Camera:</h2>
+            </div>
+
+            <div>
+              <ul class="marcaslista">
+
+                <li>
+                  <a href="#">Nikon Camera</a>
+                </li>
+
+                <li>
+                  <a href="#">Canon Camera</a>
+                </li>
+
+                <li>
+                  <a href="#">Sony Camera</a>
+                </li>
+
+                <li>
+                  <a href="#">Samsung Camera</a>
+                </li>
+
+                <li id="point">
+                  <a href="#">Point Shoot Camera</a>
+                </li>
+
+              </ul>
+            </div>
+          </section>
+
+          <section class="secciones">
+
+            <div class="estilo">
+              <h2 class="estilo">Laptops:</h2>
+            </div>
+
+            <div>
+              <ul class="marcaslista">
+
+                <li>
+                  <a href="#">Apple Laptop</a>
+                </li>
+
+                <li>
+                  <a href="#">Acer Laptop</a>
+                </li>
+
+                <li>
+                  <a href="#">Samsung Laptop</a>
+                </li>
+
+                <li>
+                  <a href="#">Lenovo Laptop</a>
+                </li>
+
+                <li>
+                  <a href="#">Sony Laptop</a>
+                </li>
+
+                <li>
+                  <a href="#">Dell Laptop</a>
+                </li>
+
+                <li>
+                  <a href="#">Asus Laptop</a>
+                </li>
+
+              </ul>
+            </div>
+          </section>
+
+        </div>
+
+        <div>
+          <section id="formaspago">
+            <h2 class="titulo">Formas de pago</h2>
+
+            <ul id="imagenes-pago">
+
+              <li>
+                <img src="imagenes/visa.png" alt="visa">
+              </li>
+
+              <li>
+                <img src="imagenes/card.png" alt="card">
+              </li>
+
+              <li>
+                <img src="imagenes/paypal.png" alt="paypal">
+              </li>
+
+              <li>
+                <img src="imagenes/skrill.png" alt="skrill">
+              </li>
+
+              <li>
+                <img src="imagenes/maestro.png" alt="maestro">
+              </li>
+
+              <li>
+                <img src="imagenes/visaElectron.png" alt="visa Electron">
+              </li>
+
+            </ul>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="copy">
+      <span id="copyright">Copyright</span> 2020 
+      <span id="nombre">ekommart</span>. All Rights Reserverd.
+      <svg height="65" width="100" style="vertical-align: middle;">
+        <defs>
+          <linearGradient id="grad1" x1="5%" y1="5%" x2="80%" y2="0%">
+            <stop offset="0%"
+            style="stop-color:rgb(252, 252, 252);stop-opacity:1" />
+            <stop offset="100%"
+            style="stop-color:rgb(255,205,0);stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <ellipse cx="40" cy="30" rx="40" ry="30" fill="url(#grad1)" />
+        <text fill="black" font-size="16" font-family="Verdana"
+        x="25" y="35">SPN</text>
+      </svg>
+    </div>
+  
+  </footer>
+</body>
+</html>
