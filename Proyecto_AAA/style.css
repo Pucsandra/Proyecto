@@ -27,10 +27,6 @@ body{
     width: 100%;
 }
 
-h1{
-    display: none;
-}
-
 li{
     list-style-type: none;
 }
