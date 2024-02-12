@@ -1,7 +1,7 @@
 :root {
     font-size: 16px;
 
-    --color-principal: rgb( 255 205 0);
+    --color-principal: rgb(97, 78, 2);
     --color-bordes:rgb(218 218 218 / 75.3%);
 }
 
@@ -50,7 +50,7 @@ a{
 }
 
 #signin{
-    color: var( --color-principal);
+    color: rgb(97, 78, 2);
 }
 
 #idioma{
@@ -220,7 +220,7 @@ li a{
 .all{
     background-color: var( --color-principal);
     padding-right: 150px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .all::before{
@@ -409,15 +409,22 @@ main{
     color: rgb(0 0 0 / 69.9%);
 }
 
+#skip-link{
+    color: rgb(97, 78, 2);
+    text-decoration: underline; 
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
 .view{
-    color: rgb(255 205 0);
+    color: rgb(97, 78, 2);
     text-decoration: underline; 
     font-weight: bold;
     font-size: 0.7rem;
 }
 
 .lista-container .view {
-    color: rgb(255 205 0);
+    color: rgb(97, 78, 2);
     text-decoration: underline;
 }
 
@@ -577,11 +584,11 @@ main{
     padding-bottom: 2px;
     color: white;
     border-radius: 3px;
-    background-color:rgb(240 54 55);
+    background-color:rgb(151, 25, 25);
 }
 
 .tipo{
-    color: rgb(0 0 0 / 53.4%);
+    color: rgba(0, 0, 0, 0.842);
 }
 
 .listas{
@@ -593,15 +600,17 @@ main{
 }
 
 .product{
-    color: white;
+    opacity: 0;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .listas:hover .product{
+    opacity: 1;
     background-color: rgb(37 37 37);
     margin-left: -20px;
     margin-right: -20px;
+    color: white;
 }
 
 #container2{
@@ -857,7 +866,7 @@ main{
 
 
 #articulo1 div{
-    color: rgb(0 0 0 / 49.3%);
+    color: rgba(0, 0, 0, 0.783);
 }
 
 #headphones{
@@ -879,13 +888,13 @@ main{
     color:rgb(255 110 69);
 }
 
-#audio{
+#the-audio{
     font-weight: 900;
     color: rgb(0 0 0 / 76%);
 }
 
 #info-headphones a{
-    background-color:rgb(255 110 69);
+    background-color:rgb(140, 64, 42);
     color: white;
     padding: 10px 20px;
     border-radius: 4px;
@@ -957,7 +966,7 @@ main{
     width: 50%;
     margin: auto;
     margin-bottom: 20px;
-    color: rgb(0 0 0 / 50.3%);
+    color: rgba(0, 0, 0, 0.819);
 }
 
 #featured{
@@ -1001,7 +1010,7 @@ main{
 
 #articulosblog div{
     font-size: 0.8rem;
-    color: rgb(0 0 0 / 50.3%);
+    color: rgba(0, 0, 0, 0.788);
 }
 
 #productos article div:first-child {

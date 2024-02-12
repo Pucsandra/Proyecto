@@ -41,16 +41,16 @@
 <body>
   
   <header>
-    <div id="inicio">
+    <div id="inicio"  aria-label="Principio de la páguina">
       <div id="welcome">Welcome to our online store! Join Free or  <span id="signin"> Sign in</span></div>
-
+      <a href="#bestsellers" id="skip-link">Contenido principal</a>
       <div id="idioma">
 
         <div id="idiomaactual">English</div>
 
-        <select name="" id="">
-          <option value="">UK</option>
-          <option value="">ES</option>
+        <select name="idioma" aria-label="Selecciona idioma">
+          <option value="uk" selected>UK</option>
+          <option value="es">ES</option>
         </select>
       </div>
 
@@ -71,7 +71,6 @@
           <input type="search" name="search" id="buscador" placeholder="Search among 100,000 products...">
           <input type="submit" value="Search" id="boton">
         </form>
-
         <div id='usuario'>
           <img src="imagenes/usuario.png" alt="usuario, me gusta y carrito" id="imagenusuario">
         </div>
@@ -84,7 +83,7 @@
 
   </header>
 
-  <nav>
+  <nav aria-label="Navegacion principal">
 
     <ul id="nav1">
 
@@ -173,7 +172,7 @@
       </li>
 
       <li class="departaments" id="listnav">
-        <img src="imagenes/navegacion.jpg" alt="" id="imagen-navegacion">
+        <img src="imagenes/navegacion.jpg" alt="navegacion" id="imagen-navegacion">
 
         <ul class="listadeparta">
           <li class="home">
@@ -430,7 +429,7 @@
       <ul id="articulos">
         <li class="listas">
 
-          <article class="article">
+          <article class="article" aria-label="1º articulo de best sellers">
             <a href="" class="new">New</a>
             <a href="" class="sale">Sale</a>
 
@@ -452,7 +451,7 @@
                 Electronics
               </div>
               <h3>Nixplay Smart Digital Photo Frame 10.1 Inch</h3>
-              <p style="color:rgb( 255,205,0); font-weight: 900;">$173.99</p>
+              <p style="color:rgb(97, 78, 2); font-weight: 900;">$173.99</p>
               <div class="product">View Product</div>
 
             </div>
@@ -460,7 +459,8 @@
         </li>
 
         <li class="listas">
-          <article class="article">
+
+          <article class="article" aria-label="2º articulo de best sellers">
             <a href="" class="new">New</a>
             <a href="" class="sale ocultar">Sale</a>
 
@@ -479,7 +479,7 @@
               <img src="imagenes/estrellas.png" alt="estrellas de valoracion" class="estrellas">
               <div class="tipo">Personal Computers</div>
               <h3>Indoor Herb Garden Starter Kit - Organic</h3>
-              <p style="color:rgb( 255,205,0); font-weight: 900;">$25.99</p>
+              <p style="color:rgb(97, 78, 2); font-weight: 900;">$25.99</p>
               <div class="product">View Product</div>
             </div>
 
@@ -488,12 +488,12 @@
 
         <li class="listas">
 
-          <article class="article">
+          <article class="article" aria-label="3º articulo de best sellers">
             <a href="" class="new ocultar">New</a>
             <a href="" class="sale">Sale</a>
 
             <div class="botones">
-              <img src="imagenes/portatil.png" alt="" id="portatil">
+              <img src="imagenes/portatil.png" alt="portatil" id="portatil">
 
               <div class="imagenes">           
                 <img src="imagenes/gusta.png" alt="me gusta el producto" class="gusta">
@@ -507,7 +507,7 @@
               <img src="imagenes/estrellas.png" alt="estrellas de valoracion" class="estrellas">
               <div class="tipo">Camera</div>
               <h3>AmazonBasics 60-Inch Lightweight Tripod</h3>
-              <p style="color:rgb( 255,205,0); font-weight: 900;">$49.99</p>
+              <p style="color:rgb(97, 78, 2); font-weight: 900;">$49.99</p>
               <div class="product">View Product</div>
 
             </div>
@@ -517,13 +517,14 @@
 
         <li class="listas">
 
-          <article class="article">
+
+          <article class="article" aria-label="4º articulo de best sellers">
             <a href="" class="new ocultar">New</a>
             <a href="" class="sale ocultar">Sale</a>
 
             <div class="botones">
 
-              <img src="imagenes/altavoz.png" alt="" id="altavoz">
+              <img src="imagenes/altavoz.png" alt="altavoz" id="altavoz">
               <div class="imagenes">           
                 <img src="imagenes/gusta.png" alt="me gusta el producto" class="gusta">
                 <img src="imagenes/cambiar.png" alt="cambiar producto" class="cambiar">
@@ -536,7 +537,7 @@
               <img src="imagenes/estrellas.png" alt="estrellas de valoracion" class="estrellas">
               <div class="tipo">Electronics</div>
               <h3>Freece Badge Of Sport Graphic Hoodie</h3>
-              <p style="color:rgb( 255,205,0); font-weight: 900;">$250.99</p>
+              <p style="color:rgb(97, 78, 2); font-weight: 900;">$250.99</p>
               <div class="product">View Product</div>
 
             </div>
@@ -573,21 +574,22 @@
       <section id="audio">
         <audio controls autoplay muted>
           <source src="audioProyecto.mp3" type="audio/mpeg">
-            Tu bucador no permite el tipo de audio.
+          <track src="subtitles_audio.vtt" kind="subtitles" srclang="es" label="Subtítulos en español">
+          <p>Audio de musica.</p>
         </audio>
       </section>
 
       <section id="videoekommart">
         <video width="520" height="440" controls>
           <source src="videoProyecto.mp4" type="video/mp4">
-          Tu bucador no permite el tipo de audio.
+          <p>Video de la empresa.</p>
         </video>
       </section>
 
       <section id="videoYoutube">
         <video width="520" height="440" controls>
           <source src="videoYoutube.mp4" type="video/mp4">
-          Tu bucador no permite el tipo de audio.
+          <p>Video de tienda online.</p>
         </video>
       </section>
     </div>
@@ -597,28 +599,29 @@
 
       <ul id="top">
         <li id="articulo1">
-          <article>
+
+          <article class="article" aria-label="1º articulo de top rating">
 
             <img src="imagenes/agua.png" alt="dispensador de agua" id="agua">
             <img src="imagenes/estrellas.png" alt="estrellas de valoracion" id="estrellaagua">
             <div>Electronics</div>
             <h3>Nixplay Smart Digital Photo Frame 10.1 Inch - Share Moments</h3>
-            <p style="color:rgb( 255,205,0); font-weight: 900;">$173.99</p>
+            <p style="color:rrgb(97, 78, 2); font-weight: 900;">$173.99</p>
 
           </article>
         </li>
 
         <li id="articulo2">
-          <article class="text">
+          <article class="text" aria-label="2º articulo de top rating">
 
             <div class="articulo-content">
 
               <img src="imagenes/promic.png" alt="altavoz" id="promic">
-              <div id="articulosinfo">
+              <div class="articulosinfo">
 
                 <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
                 <h3>PROMIC Barbell Rubber 1lb to 20lb</h3>
-                <p style="color:rgb( 255,205,0); font-weight: 900;">$55.00</p>
+                <p style="color:rgb(97, 78, 2); font-weight: 900;">$55.00</p>
 
               </div>
 
@@ -627,16 +630,16 @@
         </li>
 
         <li id="articulo3">
-          <article class="text">
+          <article class="text" aria-label="3º articulo de top rating">
 
             <div class="articulo-content">
 
               <img src="imagenes/reloj.png" alt="reloj" id="reloj">
-              <div id="articulosinfo">
+              <div class="articulosinfo">
 
                 <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
                 <h3>ZIYUE Jump Rope Premium</h3>
-                <p style="color:rgb( 255,205,0); font-weight: 900;">$90.00</p>
+                <p style="color:rgb(97, 78, 2); font-weight: 900;">$90.00</p>
               </div>
 
             </div>
@@ -645,16 +648,16 @@
         </li>
 
         <li id="articulo4">
-          <article class="text">
+          <article class="text" aria-label="4º articulo de top rating">
 
             <div class="articulo-content">
 
               <img src="imagenes/batir.png" alt="batidora" id="batir">
-              <div id="articulosinfo">
+              <div class="articulosinfo">
 
                 <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
                 <h3>Stronger Ankle Weights Set</h3>
-                <p style="color:rgb( 255,205,0); font-weight: 900;">$40.00</p>
+                <p style="color:rgb(97, 78, 2); font-weight: 900;">$40.00</p>
 
               </div>
 
@@ -663,16 +666,16 @@
         </li>
 
         <li id="articulo5">
-          <article>
+          <article aria-label="5º articulo de top rating">
 
             <div class="articulo-content">
 
               <img src="imagenes/estufa.png" alt="estufa" id="estufa">
-              <div id="articulosinfo">
+              <div class="articulosinfo">
 
                 <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
                 <h3>HemingWeight 1/2-Inch</h3>
-                <p style="color:rgb( 255,205,0); font-weight: 900;">$55.00</p>
+                <p style="color:rgb(97, 78, 2); font-weight: 900;">$55.00</p>
 
               </div>
 
@@ -681,17 +684,17 @@
         </li>
 
         <li id="articulo6">
-          <article class="text">
+          <article class="text" aria-label="6º articulo de top rating">
 
             <div class="articulo-content">
 
               <img src="imagenes/mochila.png" alt="mochila escolar" id="mochila">
 
-              <div id="articulosinfo">
+              <div class="articulosinfo">
 
                 <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
                 <h3>PROMIC Barbell Rubber 1lb to 20lb</h3>
-                <p style="color:rgb( 255,205,0); font-weight: 900;">$55.00</p>
+                <p style="color:rgb(97, 78, 2); font-weight: 900;">$55.00</p>
 
               </div>
 
@@ -700,16 +703,16 @@
         </li>
 
         <li id="articulo7">
-          <article class="text">
+          <article class="text" aria-label="7º articulo de top rating">
 
             <div class="articulo-content">
 
               <img src="imagenes/comba.png" alt="comba" id="comba">
 
-              <div id="articulosinfo">
+              <div class="articulosinfo">
                 <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
                 <h3>ZIYUE Jump Rope Premium</h3>
-                <p style="color:rgb( 255,205,0); font-weight: 900;">$90.00</p>
+                <p style="color:rgb(97, 78, 2); font-weight: 900;">$90.00</p>
 
               </div>
               
@@ -718,17 +721,17 @@
         </li>
 
         <li id="articulo8">
-          <article class="text">
+          <article class="text" aria-label="8º articulo de top rating">
 
             <div class="articulo-content">
 
               <img src="imagenes/cuchillos.png" alt="cuchillos" id="cuchillos">
 
-              <div id="articulosinfo">
+              <div class="articulosinfo">
 
                 <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
                 <h3>Stronger Ankle Weights Set</h3>
-                <p style="color:rgb( 255,205,0); font-weight: 900;">$40.00</p>
+                <p style="color:rgb(97, 78, 2); font-weight: 900;">$40.00</p>
 
               </div>
 
@@ -737,16 +740,16 @@
         </li>
 
         <li id="articulo9">
-          <article>
+          <article aria-label="9º articulo de top rating">
             <div class="articulo-content">
 
               <img src="imagenes/promic.png" alt="altavoz" id="promic2">
 
-              <div id="articulosinfo">
+              <div class="articulosinfo">
 
                 <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
                 <h3>HemingWeight 1/2-Inch</h3>
-                <p style="color:rgb( 255,205,0); font-weight: 900;">$55.00</p>
+                <p style="color:rgb(97, 78, 2); font-weight: 900;">$55.00</p>
 
               </div>
 
@@ -760,7 +763,7 @@
 
       <div id="info-headphones">
 
-        <div id="audio">THE AUDIO SALE UP TO <span id="porcentaje">60%</span> OFF</div>
+        <div id="the-audio">THE AUDIO SALE UP TO <span id="porcentaje">60%</span> OFF</div>
         <h2>Headphones & Speakers</h2>
         <a>Shop Now</a>
 
@@ -784,7 +787,7 @@
 
         <ul id="productos">
           <li id="fleece">
-            <article>
+            <article aria-label="1º articulo de featured products">
 
               <div>
                 <img src="imagenes/dron.png" alt="dron" id="dron">
@@ -793,14 +796,14 @@
               <div>
                 <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
                 <h3>Fleece Badge Of Sport Graphic Hoodie</h3>
-                <p style="color:rgb( 255,205,0); font-weight: 900;">$49.99</p>
+                <p style="color:rgb(97, 78, 2); font-weight: 900;">$49.99</p>
               </div>
 
             </article>
           </li>
 
           <li id="nba">
-            <article>
+            <article aria-label="2º articulo de featured products">
 
               <div>
                 <img src="imagenes/camara.png" alt="camara" id="camara">
@@ -809,14 +812,14 @@
               <div>
                 <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
                 <h3>Spalding NBA Street Outdoor Basketball</h3>
-                <p style="color:rgb( 255,205,0); font-weight: 900;">$49.99</p>
+                <p style="color:rgb(97, 78, 2); font-weight: 900;">$49.99</p>
               </div>
 
             </article>
           </li>
 
           <li id="fleece2">
-            <article>
+            <article aria-label="3º articulo de featured products">
 
               <div>
                 <img src="imagenes/impresora.png" alt="impresora" id="impresora">
@@ -825,14 +828,14 @@
               <div>
                 <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
                 <h3>Fleece Badge Of Sport Graphic Hoodie</h3>
-                <p style="color:rgb( 255,205,0); font-weight: 900;">$49.99</p>
+                <p style="color:rgb(97, 78, 2); font-weight: 900;">$49.99</p>
               </div>
 
             </article>
           </li>
 
           <li id="nba2">
-            <article>
+            <article aria-label="4º articulo de featured products">
 
               <div>
                 <img src="imagenes/aipad.png" alt="aipad" id="aipad">
@@ -841,7 +844,7 @@
               <div>
                 <img src="imagenes/estrellas.png" alt="estrellas de valoracion">
                 <h3>Spalding NBA Street Outdoor Basketball</h3>
-                <p style="color:rgb( 255,205,0); font-weight: 900;">$49.99</p>
+                <p style="color:rgb(97, 78, 2); font-weight: 900;">$49.99</p>
               </div>
 
             </article>
@@ -859,7 +862,7 @@
             Create stunning images with as much or as little control as you
             like thanks to a choice of Basic and Creative modes.
           </P>
-          <img src="imagenes/linea.png" alt="" id="linea-testimoneals">
+          <img src="imagenes/linea.png" alt="linea" id="linea-testimoneals">
           <div id="sean"><span id="morrison">SEAN MORRISON</span> Photographer</div>
 
           <div id="puntos">
@@ -877,7 +880,7 @@
 
       <ul id="articulosblog">
         <li>
-          <article>
+          <article aria-label="1º articulo de from our blog">
 
             <img src="imagenes/articulo1.png" alt="instagram">
             <div><span class="performance">Performance</span> • 
@@ -889,13 +892,13 @@
               Lorem ipsum dolor sit amet, consectetur adip- iscing elit, sed do eiusmod 
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
             </p>
-            <a href="#" class="view">Read More</a>
+            <a href="#" class="view" aria-label="Leer más Introducing the Nike Victory Swim Col">Read More</a>
 
           </article>
         </li>
 
         <li>
-          <article>
+          <article aria-label="2º articulo de from our blog">
 
             <img src="imagenes/articulo2.png" alt="movil cargando">
             <div>
@@ -908,13 +911,13 @@
               Lorem ipsum dolor sit amet, consectetur adip- iscing elit, sed do eiusmod 
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
             </p>
-            <a href="#" class="view">Read More</a>
+            <a href="#" class="view" aria-label="Leer más sobre KOBE V Gets the Protro Treatment">Read More</a>
 
           </article>
         </li>
 
         <li>
-          <article>
+          <article aria-label="3º articulos de from our blog">
 
             <img src="imagenes/articulo3.png" alt="comedor con escritorio">
             <div>
@@ -927,13 +930,13 @@
               Lorem ipsum dolor sit amet, consectetur adip- iscing elit, sed do eiusmod 
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
             </p>
-            <a href="#" class="view">Read More</a>
+            <a href="#" class="view" aria-label="Leer más Speed and Style: the Double-Life of Russell">Read More</a>
 
           </article>
         </li>
 
         <li>
-          <article>
+          <article aria-label="4º articulo de from our blog">
 
             <img src="imagenes/articulo4.png" alt="jarrones">
             <div>
@@ -946,7 +949,7 @@
               Lorem ipsum dolor sit amet, consectetur adip- iscing elit, sed do eiusmod 
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
             </p>
-            <a href="#" class="view">Read More</a>
+            <a href="#" class="view" aria-label="Leer más Introducing the Nike Victory Swim Col- lection">Read More</a>
 
           </article>
         </li>
