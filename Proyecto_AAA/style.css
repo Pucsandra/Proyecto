@@ -1765,6 +1765,19 @@ footer{
 
 
 @media (width <= 700px){
+
+    #principal{
+        width: 100%;
+        background-image: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url('imagenes/cocina.webp');
+        background-size: cover;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: relative;
+    }
+
     #usuario{
         display: none;
     }
