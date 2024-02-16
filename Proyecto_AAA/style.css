@@ -55,7 +55,7 @@ a{
 }
 
 #idioma::before{
-    content: url("imagenes/bandera.jpg");
+    content: url("imagenes/bandera.webp");
     margin-right: 5px;
     vertical-align: middle;
 }
@@ -102,28 +102,28 @@ a{
 }
 
 .tv::before{
-    content: url("imagenes/tv.png");
+    content: url("imagenes/tv.webp");
     margin-right: 20px;
     margin-left: 20px;
     vertical-align: middle;
 }
 
 .casa::before{
-    content: url("imagenes/guante.png");
+    content: url("imagenes/guante.webp");
     margin-right: 20px;
     margin-left: 20px;
     vertical-align: middle;
 }
 
 .anillos::before{
-    content: url("imagenes/anillos.png");
+    content: url("imagenes/anillos.webp");
     margin-right: 20px;
     margin-left: 20px;
     vertical-align: middle;
 }
 
 .animales::before{
-    content: url("imagenes/hueya.png");
+    content: url("imagenes/hueya.webp");
     margin-right: 20px;
     margin-left: 20px;
     vertical-align: middle;
@@ -220,14 +220,14 @@ li a{
 }
 
 .all::before{
-    content: url("imagenes/lineas.png");
+    content: url("imagenes/lineas.webp");
     margin-right: 5px;
     margin-left: 20px;
     vertical-align: middle;
 }
 
 .desplegable::after{
-    content: url("imagenes/desplegable.png");
+    content: url("imagenes/desplegable.webp");
     margin-left: 5px;
     vertical-align: middle;
 }
@@ -244,7 +244,7 @@ main{
 
 #principal{
     width: 100%;
-    background-image: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url('imagenes/cocina.jpg');
+    background-image: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url('imagenes/cocina.webp');
     background-size: cover;
     height: 800px;
     display: flex;
@@ -317,7 +317,7 @@ main{
     width: 50%;
     display: inline;
     margin: 0;
-    background-image: url("imagenes/speakers.png");
+    background-image: url("imagenes/speakers.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -619,7 +619,7 @@ main{
 }
 
 #movie{
-    background-image: url("imagenes/electrodomesticos.png");
+    background-image: url("imagenes/electrodomesticos.webp");
     width: 48%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -646,7 +646,7 @@ main{
 }
 
 #tools{
-    background-image: url("imagenes/cookware.png");
+    background-image: url("imagenes/cookware.webp");
     width: 48%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -866,7 +866,7 @@ main{
 }
 
 #headphones{
-    background-image: url("imagenes/publicidad.png");
+    background-image: url("imagenes/publicidad.webp");
     width: 65%;
     height: 250px;
     margin: auto;
@@ -1280,25 +1280,25 @@ footer{
 }
 
 #copyright::after{
-    content:url("imagenes/copy.png");
+    content:url("imagenes/copy.webp");
     margin-left: 5px;
 }
 
 #address::before{
-    content: url("imagenes/ubicacion.png");
+    content: url("imagenes/ubicacion.webp");
     margin-right: 5px;
     vertical-align: middle;
 }
 
 #call::before{
-    content: url("imagenes/movil.png");
+    content: url("imagenes/movil.webp");
     margin-right: 5px;
     margin-left: -4px;
     vertical-align: middle;
 }
 
 #correo::before{
-    content: url("imagenes/correo.png");
+    content: url("imagenes/correo.webp");
     margin-right: 5px;
     vertical-align: middle;
 }
@@ -1424,7 +1424,7 @@ footer{
         position: relative;
         width:  70%;
         height: 600px;
-        background-image: url("imagenes/speakers.png");
+        background-image: url("imagenes/speakers.webp");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;display: block;
@@ -1878,7 +1878,7 @@ footer{
         position: relative;
         width:  100%;
         height: 600px;
-        background-image: url("imagenes/speakers.png");
+        background-image: url("imagenes/speakers.webp");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;display: block;
