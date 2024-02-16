@@ -1983,6 +1983,11 @@ footer{
         background-repeat: no-repeat;
     }
 
+    #texto h2{
+        font-size: 2rem;
+        margin: 0;
+    }
+
     #tools h2{
         width: 120px;
     }
